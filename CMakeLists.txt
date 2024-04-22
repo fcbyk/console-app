@@ -14,6 +14,7 @@ add_executable(console_app
         src/login.cpp
         include/common_libs.h
         include/main.h
+        src/option.cpp
         )
 
 # 静态链接C++标准库

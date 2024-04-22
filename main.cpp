@@ -7,7 +7,8 @@ int main(int argc, char *argv[]) {
     // system("chcp 65001 > nul");
     SetConsoleOutputCP(CP_UTF8);
 
-    login();
+    if(argc == 1) login();
+    else if(!option(argc, argv)) return 0;
 
     std::cout << "程序正常执行" << std::endl;
     system("pause");

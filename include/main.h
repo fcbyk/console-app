@@ -6,3 +6,6 @@
 
 // 登录验证
 int login();
+
+// 程序启动选项
+int option(int argc, char *argv[]);
