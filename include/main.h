@@ -3,6 +3,7 @@
 #endif
 
 #include "../include/common_libs.h"
+#include "./app/addressBook.h"
 
 // 登录验证
 int login();
