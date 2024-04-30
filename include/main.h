@@ -9,3 +9,6 @@ int login();
 
 // 程序启动选项
 int option(int argc, char *argv[]);
+
+// 命令行操作
+int terminal(const std::string& user);

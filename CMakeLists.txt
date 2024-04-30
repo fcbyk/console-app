@@ -15,7 +15,7 @@ add_executable(console_app
         include/common_libs.h
         include/main.h
         src/option.cpp
-        )
+        src/terminal.cpp)
 
 # 静态链接C++标准库
 target_link_libraries(console_app -static-libstdc++ -static-libgcc)

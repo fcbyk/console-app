@@ -10,7 +10,9 @@ int main(int argc, char *argv[]) {
     if(argc == 1) login();
     else if(!option(argc, argv)) return 0;
 
-    std::cout << "程序正常执行" << std::endl;
+//    std::cout << "程序正常执行" << std::endl;
+
+    terminal("admin");
     system("pause");
     return 0;
 }
