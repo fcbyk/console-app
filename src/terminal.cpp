@@ -17,9 +17,14 @@ int terminal(const std::string& user){
             std::cout
                     << "目前已安装的APP列表" << std::endl
                     << "APP1：AddressBook" << std::endl
+                    << "APP2：WorkerManager" << std::endl
                     << "(使用open + APP名称 可直接打开,注意区分大小写)" << std::endl;
-        else if (command.compare("open AddressBook") == 0 || command.compare("open app1") == 0){
+        else if (command == "open AddressBook" || command == "open app1"){
             AddressBookLaunch();
+        }
+        else if (command == "open WorkerManager" || command == "open app2"){
+            WorkerManager wm;
+            wm.WorkerManagerLaunch();
         }
         else if (command == "exit") break;
         else std::cout << "请输入有效指令，使用help指令可查看使用帮助" << std::endl;

@@ -4,6 +4,7 @@
 
 #include "../include/common_libs.h"
 #include "./app/addressBook.h"
+#include "./app/WorkerManager.h"
 
 // 登录验证
 int login();
