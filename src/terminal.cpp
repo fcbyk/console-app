@@ -19,6 +19,7 @@ int terminal(const std::string& user){
                     << "APP1：AddressBook" << std::endl
                     << "APP2：WorkerManager" << std::endl
                     << "APP3：SpeechManager" << std::endl
+                    << "APP4：ComputerRoomReservation" << std::endl
                     << "(使用open + APP名称 可直接打开,注意区分大小写)" << std::endl;
         else if (command == "open AddressBook" || command == "open app1"){
             AddressBookLaunch();
@@ -27,9 +28,13 @@ int terminal(const std::string& user){
             WorkerManager wm;
             wm.WorkerManagerLaunch();
         }
-        else if (command.compare("open SpeechManager") == 0 || command.compare("open app3") == 0){
+        else if (command == "open SpeechManager" || command == "open app3"){
             SpeechManager sm;
             sm.SpeechManagerLaunch();
+        }
+        else if (command == "open ComputerRoomReservation" || command == "open app4"){
+            ComputerRoomReservation crr;
+            crr.Launch();
         }
         else if (command == "exit") break;
         else std::cout << "请输入有效指令，使用help指令可查看使用帮助" << std::endl;

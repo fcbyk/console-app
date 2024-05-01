@@ -6,6 +6,7 @@
 #include "./app/addressBook.h"
 #include "./app/WorkerManager.h"
 #include "./app/SpeechManager.h"
+#include "./app/ComputerRoomReservation.h"
 
 // 登录验证
 int login();

@@ -23,7 +23,8 @@ add_executable(
         src/app/WorkerManager.cpp
         include/app/SpeechManager.h
         src/app/SpeechManager.cpp
-        )
+        include/app/ComputerRoomReservation.h
+        src/app/ComputerRoomReservation.cpp)
 
 # 静态链接C++标准库
 target_link_libraries(console_app -static-libstdc++ -static-libgcc)
